@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{C4E5637E-BCCD-4959-A19E-4B136E5F308C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>vdtool</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>gzip;include;$(IncludePath)</IncludePath>
+    <LibraryPath>lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>gzip;include;$(IncludePath)</IncludePath>
+    <LibraryPath>lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>
+      </LanguageStandard>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>vixDiskLib.lib;vixMntapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <LanguageStandard>
+      </LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>vixDiskLib.lib;vixMntapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BackupProcessor.cpp" />
+    <ClCompile Include="gzip\adler32.c" />
+    <ClCompile Include="gzip\compress.c" />
+    <ClCompile Include="gzip\crc32.c" />
+    <ClCompile Include="gzip\deflate.c" />
+    <ClCompile Include="gzip\gzclose.c" />
+    <ClCompile Include="gzip\gzlib.c" />
+    <ClCompile Include="gzip\gzread.c" />
+    <ClCompile Include="gzip\gzwrite.c" />
+    <ClCompile Include="gzip\infback.c" />
+    <ClCompile Include="gzip\inffast.c" />
+    <ClCompile Include="gzip\inflate.c" />
+    <ClCompile Include="gzip\inftrees.c" />
+    <ClCompile Include="gzip\trees.c" />
+    <ClCompile Include="gzip\uncompr.c" />
+    <ClCompile Include="gzip\zutil.c" />
+    <ClCompile Include="S3BackupStorage.cpp" />
+    <ClCompile Include="vdtool.cpp">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCpp</CompileAs>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCpp</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gzip\zconf.h.cmakein" />
+    <None Include="gzip\zconf.h.in" />
+    <None Include="gzip\zlib.3" />
+    <None Include="gzip\zlib.map" />
+    <None Include="gzip\zlib.pc.in" />
+    <None Include="gzip\zlib2ansi" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\compression.h" />
+    <ClInclude Include="core\device.h" />
+    <ClInclude Include="core\file_handler.h" />
+    <ClInclude Include="core\membuf.h" />
+    <ClInclude Include="core\thread_safe_queue.h" />
+    <ClInclude Include="core\crc32.h" />
+    <ClInclude Include="gzip\crc32.h" />
+    <ClInclude Include="gzip\deflate.h" />
+    <ClInclude Include="gzip\gzguts.h" />
+    <ClInclude Include="gzip\inffast.h" />
+    <ClInclude Include="gzip\inffixed.h" />
+    <ClInclude Include="gzip\inflate.h" />
+    <ClInclude Include="gzip\inftrees.h" />
+    <ClInclude Include="gzip\trees.h" />
+    <ClInclude Include="gzip\zconf.h" />
+    <ClInclude Include="gzip\zlib.h" />
+    <ClInclude Include="gzip\zutil.h" />
+    <ClInclude Include="BackupProcessor.h" />
+    <ClInclude Include="BackupStorage.h" />
+    <ClInclude Include="CommonTypes.h" />
+    <ClInclude Include="S3BackupStorage.h" />
+    <ClInclude Include="StorageFactory.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\AWSSDKCPP-Core.redist.1.6.25\build\native\AWSSDKCPP-Core.redist.targets" Condition="Exists('..\packages\AWSSDKCPP-Core.redist.1.6.25\build\native\AWSSDKCPP-Core.redist.targets')" />
+    <Import Project="..\packages\AWSSDKCPP-Core.1.6.25\build\native\AWSSDKCPP-Core.targets" Condition="Exists('..\packages\AWSSDKCPP-Core.1.6.25\build\native\AWSSDKCPP-Core.targets')" />
+    <Import Project="..\packages\AWSSDKCPP-S3.redist.1.6.20060301.25\build\native\AWSSDKCPP-S3.redist.targets" Condition="Exists('..\packages\AWSSDKCPP-S3.redist.1.6.20060301.25\build\native\AWSSDKCPP-S3.redist.targets')" />
+    <Import Project="..\packages\AWSSDKCPP-S3.1.6.20060301.25\build\native\AWSSDKCPP-S3.targets" Condition="Exists('..\packages\AWSSDKCPP-S3.1.6.20060301.25\build\native\AWSSDKCPP-S3.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\AWSSDKCPP-Core.redist.1.6.25\build\native\AWSSDKCPP-Core.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AWSSDKCPP-Core.redist.1.6.25\build\native\AWSSDKCPP-Core.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\AWSSDKCPP-Core.1.6.25\build\native\AWSSDKCPP-Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AWSSDKCPP-Core.1.6.25\build\native\AWSSDKCPP-Core.targets'))" />
+    <Error Condition="!Exists('..\packages\AWSSDKCPP-S3.redist.1.6.20060301.25\build\native\AWSSDKCPP-S3.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AWSSDKCPP-S3.redist.1.6.20060301.25\build\native\AWSSDKCPP-S3.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\AWSSDKCPP-S3.1.6.20060301.25\build\native\AWSSDKCPP-S3.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AWSSDKCPP-S3.1.6.20060301.25\build\native\AWSSDKCPP-S3.targets'))" />
+  </Target>
+</Project>

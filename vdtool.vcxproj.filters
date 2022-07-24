@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{6d46a9e3-b92f-4702-a73c-c76dc3c2c4a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gzip">
+      <UniqueIdentifier>{e49d5033-0153-4328-ab4c-d5e6ecf85e00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="vdtool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="S3BackupStorage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BackupProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\adler32.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\compress.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\crc32.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\deflate.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\gzclose.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\gzlib.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\gzread.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\gzwrite.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\infback.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\inffast.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\inflate.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\inftrees.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\trees.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\uncompr.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="gzip\zutil.c">
+      <Filter>Source Files\gzip</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="gzip\zconf.h.cmakein">
+      <Filter>Source Files\gzip</Filter>
+    </None>
+    <None Include="gzip\zconf.h.in">
+      <Filter>Source Files\gzip</Filter>
+    </None>
+    <None Include="gzip\zlib.3">
+      <Filter>Source Files\gzip</Filter>
+    </None>
+    <None Include="gzip\zlib.map">
+      <Filter>Source Files\gzip</Filter>
+    </None>
+    <None Include="gzip\zlib.pc.in">
+      <Filter>Source Files\gzip</Filter>
+    </None>
+    <None Include="gzip\zlib2ansi">
+      <Filter>Source Files\gzip</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\file_handler.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\membuf.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\compression.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="StorageFactory.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="S3BackupStorage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BackupProcessor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonTypes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BackupStorage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\crc32.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzip\crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzip\deflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzip\gzguts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzip\inffast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzip\inffixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzip\inflate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzip\inftrees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzip\trees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzip\zconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzip\zlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gzip\zutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="core\thread_safe_queue.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
