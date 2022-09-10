@@ -266,7 +266,7 @@ void S3BackupStorage::UploadBackupSectorDataAsync(string backupId, string item, 
 	auto objectStream = MakeShared<IOStream>("BlockUpload", buf);
 	
 	PutObjectRequest request;
-	request.WithBucket(bucket.c_str()).WithKey(cstr).WithTagging("calamu");
+	request.WithBucket(bucket.c_str()).WithKey(cstr).WithTagging("custom");
 	request.SetBody(objectStream);
 	request.SetContentLength(bufferSize);
 
